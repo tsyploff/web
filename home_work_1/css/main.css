@@ -1,0 +1,34 @@
+
+.common {
+	border-radius: 160px;
+	width: 280px;
+	height: 280px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 85px;
+	transition: 0.7s;
+}
+
+.first {
+	background-color: gray;
+}
+
+.second {
+	background-color: gray;
+}
+
+.third {
+	background-color: gray;
+}
+
+.first:hover {
+	background-color: red;
+}
+
+.second:hover {
+	background-color: yellow;
+}
+
+.third:hover {
+	background-color: green;
+}
