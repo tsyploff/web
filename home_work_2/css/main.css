@@ -29,9 +29,6 @@
 }
 
 .battery:hover:after { 
-	width: 4%;
-	height: 40%;
-	background: black;
 	right: -15px; 
 	top: 36px;
 }
