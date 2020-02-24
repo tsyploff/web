@@ -21,11 +21,19 @@
 }
 
 .battery::after { 
-	width: 10px;
-	height: 40px;
+	width: 4%;
+	height: 40%;
 	background: black;
 	right: -15px; 
-	top: 35px;
+	top: 32px;
+}
+
+.battery:hover:after { 
+	width: 4%;
+	height: 40%;
+	background: black;
+	right: -15px; 
+	top: 36px;
 }
 
 .battery::before { 
