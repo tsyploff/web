@@ -1,0 +1,72 @@
+div {
+	transition: 0.5s;
+}
+
+#main {
+	position: relative;
+	border: 1px solid black;
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+	background: yellow;	
+}
+
+#main:hover {
+	height: 500px;
+	width: 500px;
+}
+
+#main:hover .first {
+	border-left: 125px solid black;
+	border-right: 125px solid black;
+	border-bottom: 250px solid black;
+	border-top: 0px solid black;
+
+	border-left-color: yellow;
+	border-top-color: yellow;
+	border-right-color: yellow;
+}
+
+#main2 {
+	position: relative;
+	border: 1px solid black;
+	margin: 50px auto;
+	height: 200px;
+	width: 200px;
+	background: yellow;
+}
+
+#main2:hover .second {
+	background: red;
+}
+
+.first {
+	border-left: 50px solid black;
+	border-right: 50px solid black;
+	border-bottom: 100px solid black;
+	border-top: 0px solid black;
+
+	border-left-color: yellow;
+	border-top-color: yellow;
+	border-right-color: yellow;
+	
+	position: absolute;
+	
+	height: 0;
+	width: 0;
+}
+
+.second {
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 50%;
+	width: 50%;
+	background: green;
+}
+
+.text::after {
+	content: "!";
+	display: block;
+}
