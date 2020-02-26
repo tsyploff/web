@@ -4,6 +4,10 @@ html {
 	font-size: 18pt;
 }
 
+div {
+	border: 10px solid black; important!
+}
+
 #main div {
 	border: 2px solid blue;
 }
