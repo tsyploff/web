@@ -19,6 +19,10 @@ html {
 	cursor: progress;
 }
 
+.parent.parent {
+	background: yellow;
+}
+
 .child {
 	width: 150px;
 	height: 100px;
