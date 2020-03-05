@@ -1,0 +1,68 @@
+
+.battery {
+  height: 100px; 
+  width: 300px; 
+  
+  border: 5px solid black; 
+  
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto; 
+  
+  position: relative; 
+  
+  transition: 0.75s;
+}
+
+.battery::before, .battery::after {
+  content: '';
+  position: absolute;
+  transition: 0.75s;
+}
+
+.battery::after { 
+  width: 4%;
+  height: 40%;
+  background: black;
+  right: -17px; 
+  top: 30px;
+}
+
+.battery:hover:after { 
+  right: -15px; 
+  top: 36px;
+}
+
+.battery::before { 
+  height: 100%; 
+}
+
+.low::before { 
+  width: 33%;
+  background: red;
+}
+ 
+.medium::before { 
+  width: 66%;
+  background: yellow;
+}
+
+.high::before { 
+  width: 100%;
+  background: green;
+}
+
+.battery:hover {
+  height: 120px; 
+  width: 360px; 
+}
+
+.low:hover:before { 
+  width: 66%;
+  background: yellow;
+}
+ 
+.medium:hover:before { 
+  width: 100%;
+  background: green;
+}

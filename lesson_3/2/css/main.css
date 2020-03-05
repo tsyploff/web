@@ -1,0 +1,19 @@
+
+.circle {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background: green;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+.square {
+	height: 100px;
+	width: 100px;
+	background: blue;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
