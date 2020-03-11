@@ -1,0 +1,29 @@
+
+.circle, .square {
+	box-sizing: border-box;
+	height: 100px;
+	width: 100px;
+	margin-right: 20px;
+	margin-top: 20px;
+	float: left;
+}
+
+.circle {
+	border-radius: 50px;
+	background: green;
+}
+
+.square {
+	background: cyan;
+}
+
+.boundary {
+	border: 4px solid black;
+}
+
+.circle div, .square div {
+	width: 90%;
+	height: 50%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
