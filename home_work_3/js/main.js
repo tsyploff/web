@@ -17,12 +17,5 @@ function addSquare() {
 }
 
 function onFigureClick() {
-  if (this.classList.contains('boundary')) {
-  
-    this.classList.remove('boundary');
-  
-  } else {
-  
-    this.classList.toggle('boundary');
-  }
+  this.classList.toggle('boundary');
 }
