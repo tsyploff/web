@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>25.03.2020</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript", src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="first clearfix">
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<!-- <div style="clear: both;"></div> -->
+		</div>
+		<p>
+			На начальном этапе задаётся стартовая точка (обозначим её 1) и шаги hi по координатам. Затем замораживаем значения всех координат кроме 1-й, вычисляем значения функции в точках x0+h0 и x0-h0 (где x0 — первая координата точки, а h0 — соответственно значение шага по этой координате) и переходим в точку с наименьшим значением функции. В этой точке замораживаем значения всех координат кроме 2-й, вычисляем значения функции в точках x1+h1 и x1-h1, переходим в точку с наименьшим значением функции и т. д. для всех координат. В случае, если для какой-нибудь координаты значение в исходной точке меньше, чем значения для обоих направлений шага, то шаг по этой координате уменьшается. Когда шаги по всем координатам hi станут меньше соответствующих значений ei, алгоритм завершается, и точка 1 признаётся точкой минимума.
+		</p>
+	</body>
+</html>
