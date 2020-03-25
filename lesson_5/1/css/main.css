@@ -1,5 +1,21 @@
 
 img {
-	float: left;
-	margin-right: 10px;
+	margin: 0 10px;
+	width: 300px;
+}
+
+img.right {
+	float: right;
+}
+
+img.left {
+float: left;
+}
+
+.first {
+	border: 1px dashed red;
+}
+
+.clear {
+	clear: both;
 }
