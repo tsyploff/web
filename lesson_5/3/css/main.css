@@ -1,0 +1,25 @@
+
+.square {
+	width: 150px;
+	height: 150px;
+	background: red;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.first, .second {
+	border: 1px dashed red;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.second {
+	border-color: green;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
