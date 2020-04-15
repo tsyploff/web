@@ -11,6 +11,7 @@
 				margin: 0 auto; /*выравнивание по центру*/
 				padding: 15px 10px; /*поля*/
 				background-color: cyan; /*светло синий в моём понимании*/
+				position: relative; /*относительное позиционирование*/
 			}
 
 			.square {
@@ -26,11 +27,15 @@
 			}
 
 			.first {
-
+				position: absolute;
+				bottom: 0;
+				left: 0;
 			}
 
 			.second {
-
+				position: absolute;
+				top: 0;
+				right: 0;
 			}
 
 			.active {
