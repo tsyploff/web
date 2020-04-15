@@ -4,6 +4,7 @@
 		<title>Цыплов Алексей Михайлович, Вариант 11</title>
 		<script type="text/javascript", src="js/main.js"></script>
 		<style type="text/css">	
+			
 			#wrapper {
 				width: 750px; /*ширина*/
 				height: 440px; /*высота*/
@@ -16,7 +17,7 @@
 				width: 110px; /*ширина*/
 				height: 110px; /*высота*/
 				background: green; /*зелёный цвет*/
-				border: 1px solid black; /*рамка*/
+				border: 3px solid black; /*рамка*/
 				box-shadow: 5px 5px; /*тень*/
 			}
 
@@ -28,15 +29,20 @@
 
 			}
 
+			.second {
+
+			}
+
+			.active {
+				border-color: red;
+			}
+
 			#wrapper:hover {
 				cursor: pointer; /*курсор*/
 			}
 
 			#wrapper:hover .second.rounded {
-				/*width: 115.5px; */
-				/*height: 115.5px; */
-				width: 105%; /*ширина*/
-				height: 105%; /*высота*/
+				transform: scale(1.05);
 				transition: 1s; /*плавность*/
 			}
 
@@ -45,7 +51,23 @@
 				transition: 1s; /*плавность*/
 			}
 		</style>
-		<script type="text/javascript"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() {
+				document.querySelector("#wrapper").addEventListener("click", onFigureClick);
+			});
+
+			function onFigureClick(ev) {
+				var elm = ev.target;
+				while (elm) {
+					if (elm.classList.contains("square")) {
+						elm.classList.toggle('active');
+						break;
+					}
+				elm = elm.parentNode;	
+				}
+			}
+
+		</script>
 	</head>
 
 	<body>		
