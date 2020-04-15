@@ -27,19 +27,19 @@
 			}
 
 			.first {
-				position: absolute;
-				bottom: 0;
-				left: 0;
+				position: absolute; /*абсолютное позиционирование*/
+				bottom: 0; /*нижний*/
+				left: 0; /*левый*/
 			}
 
 			.second {
-				position: absolute;
-				top: 0;
-				right: 0;
+				position: absolute; /*абсолютное позиционирование*/
+				top: 0; /*верхний*/
+				right: 0; /*правый*/
 			}
 
 			.active {
-				border-color: red;
+				border-color: red; /*другой цвет рамки*/
 			}
 
 			#wrapper:hover {
@@ -72,6 +72,13 @@
 				}
 			}
 
+			function addSquare() {
+				var div = document.createElement('div');
+				var child = document.createElement('div');
+				div.appendChild(child);
+				div.classList.add('square');
+				document.querySelector().appendChild(div);
+			}
 		</script>
 	</head>
 
@@ -81,5 +88,6 @@
 			<div class = 'square first'></div>
 			<div class = 'square second rounded'></div>
 		</div>
+		<button type="button" name="добавить" onclick="addSquare()">add Square</button>
 	</body>
 </html>
