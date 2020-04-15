@@ -58,7 +58,8 @@
 		</style>
 		<script type="text/javascript">
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector("#wrapper").addEventListener("click", onFigureClick);
+				var body = document.getElementsByTagName('body')[0];
+				body.addEventListener("click", onFigureClick);
 			});
 
 			function onFigureClick(ev) {
@@ -75,9 +76,10 @@
 			function addSquare() {
 				var div = document.createElement('div');
 				var child = document.createElement('div');
+				var body = document.getElementsByTagName('body')[0];
 				div.appendChild(child);
 				div.classList.add('square');
-				document.querySelector().appendChild(div);
+				body.appendChild(div);
 			}
 		</script>
 	</head>
