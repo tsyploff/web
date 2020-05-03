@@ -1,0 +1,34 @@
+
+.credit-calc label {
+	display: inline-block; 		/*волшебная кнопка чтобы всё заработало*/
+	min-width: 200px; 			/*минимальная ширина блока*/
+}
+
+.credit-calc .form-row {
+	margin-bottom: 10px; 		/*отступы после input*/
+}
+
+.credit-calc button {
+	margin-left: 200px; 		/*выравниваем кнопку*/
+	width: 172.5px;				/*выравниваем ширину кнопки*/
+}
+
+table.credit {
+	border-collapse: collapse; 	/*убираем двойные границы между ячейками таблицы*/
+	padding: 5px;				/*поля между ячейками таблицы*/
+}
+
+table.credit td {
+	border: 1px solid black;	/*граница между ячейками таблицы*/
+	text-align: right; 			/*выравнивание текст внутри таблицы*/
+}
+
+table.credit thead td {
+	font-weight: bold; 			/*жирный шрифт*/
+	background-color: #eee;		/*цвет фона*/
+}
+
+.plot {
+	width: 600px;				/*ширина графика*/
+	height: 600px;				/*высота графика*/
+}

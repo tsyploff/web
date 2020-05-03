@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ru"> <!-- lang для валидности -->
+	<head>
+		<meta charset="utf-8"> 										<!-- кодировка -->
+		<title>27.04.2020</title>									<!-- заголовок вкладки -->
+		<link rel="stylesheet" type="text/css" href="css/main.css"> <!-- подключаем css -->
+		<script type="text/javascript" src="js/main.js"></script>	<!-- подключаем js -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> <!-- для графики -->
+	</head>
+	<body>
+		<div class="credit-calc"> 									<!-- div с калькулятором -->
+			<h1>Кредитный калькулятор</h1> 							<!-- заголовок -->
+			<div class="form-row"> 																		<!-- ввод суммы кредита -->
+				<label>Сумма кредита: </label><input type="text" name="credit-sum" value="100000"></div>
+			<div class="form-row"> 																		<!-- ввод срока кредита -->
+				<label>Срок (в месяцах): </label><input type="text" name="credit-period" value="24"></div>
+			<div class="form-row"> 																		<!-- ввод годовой процентной ставки -->
+				<label>Процентная ставка: </label><input type="text" name="credit-per-cent" value="13"></div>
+			<div class="form-row"><button onclick="bntCalcClick();">РАСЧЁТ</button></div> 				<!-- кнопка "провести расчёт" -->
+			<div class="form-row"> 																		<!-- вывод суммы кредита -->
+				<label>Ежемесячный платёж: </label><input type="text" name="credit-monthly-payment" readonly>
+			</div>
+		</div>
+		
+		<table class="credit"> 	<!-- таблица -->
+			<thead>				<!-- заголовок таблицы -->
+				<tr><td>Месяц</td><td>Долг с %</td><td>Платёж</td><td>Остаток долга после платежа</td></tr>
+			</thead> 
+			<tbody></tbody>		<!-- тело таблицы -->
+		</table>
+
+		<div class="plot"> 		<!-- график -->
+			<canvas></canvas> 	
+		</div>
+	</body>
+</html>
