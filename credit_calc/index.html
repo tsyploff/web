@@ -11,16 +11,13 @@
 	<body>
 		<div class="credit-calc"> 									<!-- div с калькулятором -->
 			<h1>Кредитный калькулятор</h1> 							<!-- заголовок -->
-			<div class="form-row"> 																		<!-- ввод суммы кредита -->
-				<label>Сумма кредита: </label><input type="text" name="credit-sum" value="100000"></div>
-			<div class="form-row"> 																		<!-- ввод срока кредита -->
-				<label>Срок (в месяцах): </label><input type="text" name="credit-period" value="24"></div>
-			<div class="form-row"> 																		<!-- ввод годовой процентной ставки -->
-				<label>Процентная ставка: </label><input type="text" name="credit-per-cent" value="13"></div>
-			<div class="form-row"><button onclick="bntCalcClick();">РАСЧЁТ</button></div> 				<!-- кнопка "провести расчёт" -->
-			<div class="form-row"> 																		<!-- вывод суммы кредита -->
-				<label>Ежемесячный платёж: </label><input type="text" name="credit-monthly-payment" readonly>
-			</div>
+			<div class="form-row"><label>Сумма кредита: </label><input type="text" name="credit-sum" value="100000"></div>		<!-- ввод суммы кредита -->
+			<div class="form-row"><label>Срок (в месяцах): </label><input type="text" name="credit-period" value="24"></div>	<!-- ввод срока кредита -->
+			<div class="form-row"><label>Процентная ставка: </label><input type="text" name="credit-per-cent" value="13"></div>	<!-- ввод годовой процентной ставки -->
+			<div class="form-row"><button onclick="bntCalcClick();">РАСЧЁТ</button></div> 										<!-- кнопка "провести расчёт" -->
+			<div class="form-row"><label>Ежемесячный платёж: </label><input type="text" name="credit-monthly-payment" readonly></div>	<!-- вывод суммы кредита -->
+			<div class="form-row"><label>Переплата:</label><input type="text" name="overpay" readonly></div>					<!-- ввод переплаты -->
+			<div class="form-row"><label>Переплата в %:</label><input type="text" name="overpay-percent" readonly></div>		<!-- процент переплаты -->
 		</div>
 		
 		<table class="credit"> 	<!-- таблица -->
@@ -30,8 +27,7 @@
 			<tbody></tbody>		<!-- тело таблицы -->
 		</table>
 
-		<div class="plot"> 		<!-- график -->
-			<canvas></canvas> 	
-		</div>
+		<div class="first-plot"><canvas></canvas></div>		<!-- график динамики долга-->
+		<div class="second-plot"><canvas></canvas></div>	<!-- график платежей и процентов-->
 	</body>
 </html>

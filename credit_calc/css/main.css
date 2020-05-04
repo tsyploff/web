@@ -28,7 +28,17 @@ table.credit thead td {
 	background-color: #eee;		/*цвет фона*/
 }
 
-.plot {
+.first-plot, .second-plot {
 	width: 600px;				/*ширина графика*/
 	height: 600px;				/*высота графика*/
+	position: absolute;			/*позиционирование*/
+	left: 500px;				/*позиционирование по горизонтали*/
+}
+
+.first-plot {
+	top: 0; 					/*позиционирование по вертикали*/
+}
+
+.second-plot {
+	top: 350px; 				/*позиционирование по вертикали*/
 }
