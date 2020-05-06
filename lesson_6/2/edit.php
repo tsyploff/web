@@ -12,6 +12,10 @@
     $fio = $row['fio'];
     $age = $row['age'];
     $title = 'Редактировать: ' .$fio;
+
+    function print_options($table, $value) {
+        global $db;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +32,13 @@
         	<input type="hidden" name="id" value="<?=$id?>">
         	<label>Фамилия: </label><input name="fio" type="text" value="<?=$fio?>"><br>
         	<label>Возраст: </label><input name="age" type="text" value="<?=$age?>"><br>
+            <label>Работа</label>
+            <select name="job_id">
+                <?=print_options('job', $row['job_id'])?>
+                <!-- <option value=""></option>
+                <option value="1">Сынуля</option>
+                <option selected value="2">Батяня</option> -->
+            </select>
         	<input type="submit" name="submit" value="Сохранить">
         </form>
 
