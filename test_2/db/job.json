@@ -1,0 +1,12 @@
+[
+{"type":"header","version":"4.7.9","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"u11_test_2"},
+{"type":"table","name":"job","database":"u11_test_2","data":
+[
+{"id":"1","job":"\u041c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a"},
+{"id":"2","job":"\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0441\u0442"},
+{"id":"3","job":"\u0414\u0432\u043e\u0440\u043d\u0438\u043a"},
+{"id":"4","job":"\u041a\u0430\u0441\u0441\u0438\u0440"}
+]
+}
+]
