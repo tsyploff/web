@@ -53,7 +53,7 @@
 						$job  = $row['average'];	//ввод профессии в нужную переменную
 						echo "
 						<tr>
-							<td>$name</td>
+							<td><a href='/kt2/student.php?max_age=100&specialities=$name'>$name</a></td>
 							<td>$age</td>
 							<td>$job</td>
 						</tr>"; //вывод данных в таблицу
